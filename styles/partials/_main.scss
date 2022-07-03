@@ -1,0 +1,33 @@
+.btn {
+  border-radius: 25px;
+  background-color: $blue;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.section-hero {
+  height: 100vh;
+  background-image: $gradient;
+}
+
+.card-gradient {
+  padding: 2px !important;
+  border-radius: 6px !important;
+  user-select: none;
+  i {
+    color: $gradient-end;
+  }
+}
+.card-gradient:hover {
+  background-image: $gradient;
+
+  & h5 {
+    color: $blue;
+  }
+  & .far {
+    color: $blue;
+  }
+  & a {
+    color: $blue;
+  }
+}

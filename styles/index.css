@@ -1,0 +1,43 @@
+.btn {
+  border-radius: 25px;
+  background-color: #449bfd;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.section-hero {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#449bfd), to(#835ce4));
+  background-image: linear-gradient(to right, #449bfd, #835ce4);
+}
+
+.card-gradient {
+  padding: 2px !important;
+  border-radius: 6px !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.card-gradient i {
+  color: #835ce4;
+}
+
+.card-gradient:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#449bfd), to(#835ce4));
+  background-image: linear-gradient(to right, #449bfd, #835ce4);
+}
+
+.card-gradient:hover h5 {
+  color: #449bfd;
+}
+
+.card-gradient:hover .far {
+  color: #449bfd;
+}
+
+.card-gradient:hover a {
+  color: #449bfd;
+}
+/*# sourceMappingURL=index.css.map */
