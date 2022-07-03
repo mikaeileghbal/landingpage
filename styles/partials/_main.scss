@@ -10,15 +10,19 @@
   background-image: $gradient;
 }
 
-.card-gradient {
-  padding: 2px !important;
-  border-radius: 6px !important;
-  user-select: none;
+.features {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.features .wrapper {
+  padding: 2px;
+  border-radius: 6px;
+
   i {
     color: $gradient-end;
   }
 }
-.card-gradient:hover {
+.features .wrapper:hover {
   background-image: $gradient;
 
   & h5 {
