@@ -13,8 +13,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -24,140 +24,170 @@
     <title>Landing page</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Ne<span>xus</span></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" aria-current="page" href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" aria-current="page" href="#"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" href="#">Features</a>
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" href="#">How it work</a>
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" href="#">Pricing</a>
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" href="#">Download</a>
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" href="#">Contact</a>
-              </li>
-            </ul>
-            <button class="btn btn-sm btn-primary py-2 border-0">
-              Get Start
+    <!-- Header section -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ne<span>xus</span></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
+                <li class="nav-item px-1">
+                  <a class="nav-link fw-bold" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link fw-bold" aria-current="page" href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link fw-bold" href="#">Features</a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link fw-bold" href="#">How it work</a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link fw-bold" href="#">Pricing</a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link fw-bold" href="#">Download</a>
+                </li>
+                <li class="nav-item px-1">
+                  <a class="nav-link fw-bold" href="#">Contact</a>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary py-2 border-0">
+                Get Start
+              </button>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
+    </header>
 
-    <div class="container-fluid m-0 p-0">
-      <section class="section-hero"></section>
-    </div>
+    <!-- Hero section -->
+    <section class="section-hero">
+      <div class="container-fluid m-0 p-0"></div>
+    </section>
 
-    <div class="container features">
-      <div class="row row-cols-4 g-4 m-0">
-        <div class="col">
-          <div class="wrapper">
-            <div class="card text-center py-4">
-              <i class="far fa-face-smile fa-2x"></i>
-              <div class="card-body">
-                <h5 class="card-title text-capitalize">Easy to use</h5>
-                <p class="card-text">
-                  You are going to use a passage lorem ipsum, you need to
-                  usefull be sure.
-                </p>
-                <a href="#" class="btn bg-white border-0 text-uppercase fw-bold"
-                  >Read more</a
-                >
+    <!-- Attributes section -->
+    <section class="section-attributes">
+      <div class="container attributes">
+        <div class="row row-cols-4 g-4 m-0">
+          <div class="col">
+            <div class="wrapper">
+              <div class="card text-center py-4">
+                <i class="fa fa-smile-o fa-2x"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">Easy to use</h5>
+                  <p class="card-text">
+                    You are going to use a passage lorem ipsum, you need to
+                    usefull be sure.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn bg-white border-0 text-uppercase fw-bold"
+                    >Read more</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="wrapper">
-            <div class="card text-center py-4">
-              <i class="far fa-home fa-2x"></i>
-              <div class="card-body">
-                <h5 class="card-title text-capitalize">Awesome design</h5>
-                <p class="card-text">
-                  You are going to use a passage lorem ipsum, you need to
-                  usefull be sure.
-                </p>
-                <a
-                  href="#"
-                  class="btn bg-white border-0 text text-uppercase fw-bold"
-                  >Read more</a
-                >
+          <div class="col">
+            <div class="wrapper">
+              <div class="card text-center py-4">
+                <i class="fa fa-smile-o fa-2x"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">Awesome design</h5>
+                  <p class="card-text">
+                    You are going to use a passage lorem ipsum, you need to
+                    usefull be sure.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn bg-white border-0 text text-uppercase fw-bold"
+                    >Read more</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="wrapper">
-            <div class="card text-center py-4">
-              <i class="far fa-sort-up fa-2x"></i>
-              <div class="card-body">
-                <h5 class="card-title text-capitalize">Easy to cusomize</h5>
-                <p class="card-text">
-                  You are going to use a passage lorem ipsum, you need to
-                  usefull be sure.
-                </p>
-                <a
-                  href="#"
-                  class="btn bg-white border-0 text text-uppercase fw-bold"
-                  >Read more</a
-                >
+          <div class="col">
+            <div class="wrapper">
+              <div class="card text-center py-4">
+                <i class="fa fa-smile-o fa-2x"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">Easy to cusomize</h5>
+                  <p class="card-text">
+                    You are going to use a passage lorem ipsum, you need to
+                    usefull be sure.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn bg-white border-0 text text-uppercase fw-bold"
+                    >Read more</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="wrapper">
-            <div class="card text-center py-4">
-              <i class="far fa-face-smile fa-2x"></i>
-              <div class="card-body">
-                <h5 class="card-title text-capitalize">Anytime support</h5>
-                <p class="card-text">
-                  You are going to use a passage lorem ipsum, you need to
-                  usefull be sure.
-                </p>
-                <a
-                  href="#"
-                  class="btn bg-white border-0 text text-uppercase fw-bold"
-                  >Read more</a
-                >
+          <div class="col">
+            <div class="wrapper">
+              <div class="card text-center py-4">
+                <i class="fa fa-smile-o fa-2x"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">Anytime support</h5>
+                  <p class="card-text">
+                    You are going to use a passage lorem ipsum, you need to
+                    usefull be sure.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn bg-white border-0 text text-uppercase fw-bold"
+                    >Read more</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- Features section -->
+    <section class="section-features">
+      <div class="container text-center">
+        <h2 class="text-capitalize">app design features</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ad
+              cupiditate facere nobis ratione quo esse consectetur praesentium
+              modi beatae?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6"></div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </section>
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

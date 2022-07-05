@@ -11,34 +11,43 @@
   background-image: linear-gradient(to right, #449bfd, #835ce4);
 }
 
-.features {
+.attributes {
   padding-top: 3em;
   padding-bottom: 3em;
 }
 
-.features .wrapper {
+.attributes .wrapper {
   padding: 2px;
   border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.features .wrapper i {
+.attributes .wrapper i {
   color: #835ce4;
 }
 
-.features .wrapper:hover {
+.attributes .wrapper:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#449bfd), to(#835ce4));
   background-image: linear-gradient(to right, #449bfd, #835ce4);
 }
 
-.features .wrapper:hover h5 {
+.attributes .wrapper:hover h5 {
   color: #449bfd;
 }
 
-.features .wrapper:hover .far {
+.attributes .wrapper:hover .far {
   color: #449bfd;
 }
 
-.features .wrapper:hover a {
+.attributes .wrapper:hover a {
   color: #449bfd;
+}
+
+.section-features {
+  height: 100vh;
+  background-color: #efefef;
 }
 /*# sourceMappingURL=index.css.map */

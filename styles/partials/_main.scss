@@ -10,28 +10,36 @@
   background-image: $gradient;
 }
 
-.features {
+.attributes {
   padding-top: 3em;
   padding-bottom: 3em;
-}
-.features .wrapper {
-  padding: 2px;
-  border-radius: 6px;
 
-  i {
-    color: $gradient-end;
+  .wrapper {
+    padding: 2px;
+    border-radius: 6px;
+    user-select: none;
+
+    i {
+      color: $gradient-end;
+    }
+  }
+
+  .wrapper:hover {
+    background-image: $gradient;
+
+    & h5 {
+      color: $blue;
+    }
+    & .far {
+      color: $blue;
+    }
+    & a {
+      color: $blue;
+    }
   }
 }
-.features .wrapper:hover {
-  background-image: $gradient;
 
-  & h5 {
-    color: $blue;
-  }
-  & .far {
-    color: $blue;
-  }
-  & a {
-    color: $blue;
-  }
+.section-features {
+  height: 100vh;
+  background-color: $gray-light;
 }
