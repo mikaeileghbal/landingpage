@@ -23,11 +23,14 @@
 
     <title>Landing page</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#top-navbar">
     <!-- Header section -->
     <header class="header">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-white py-4"
+          id="top-navbar"
+        >
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Ne<span>xus</span></a>
             <button
@@ -43,30 +46,38 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
-                <li class="nav-item px-1">
-                  <a class="nav-link fw-bold" aria-current="page" href="#"
-                    >Home</a
-                  >
+                <li class="nav-item px-3">
+                  <a class="nav-link px-0" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item px-1">
-                  <a class="nav-link fw-bold" aria-current="page" href="#"
+                <li class="nav-item px-3">
+                  <a class="nav-link px-0" aria-current="page" href="#"
                     >About</a
                   >
                 </li>
-                <li class="nav-item px-1">
-                  <a class="nav-link fw-bold" href="#">Features</a>
+                <li class="nav-item px-3">
+                  <a class="nav-link px-0" aria-current="page" href="#"
+                    >Features</a
+                  >
                 </li>
-                <li class="nav-item px-1">
-                  <a class="nav-link fw-bold" href="#">How it work</a>
+                <li class="nav-item px-3">
+                  <a class="nav-link px-0" aria-current="page" href="#"
+                    >How it work</a
+                  >
                 </li>
-                <li class="nav-item px-1">
-                  <a class="nav-link fw-bold" href="#">Pricing</a>
+                <li class="nav-item px-3">
+                  <a class="nav-link px-0" aria-current="page" href="#"
+                    >Pricing</a
+                  >
                 </li>
-                <li class="nav-item px-1">
-                  <a class="nav-link fw-bold" href="#">Download</a>
+                <li class="nav-item px-3">
+                  <a class="nav-link px-0" aria-current="page" href="#"
+                    >Download</a
+                  >
                 </li>
-                <li class="nav-item px-1">
-                  <a class="nav-link fw-bold" href="#">Contact</a>
+                <li class="nav-item px-3">
+                  <a class="nav-link px-0" aria-current="page" href="#"
+                    >Contact</a
+                  >
                 </li>
               </ul>
               <button class="btn btn-sm btn-primary py-2 border-0">
@@ -92,7 +103,7 @@
               <div class="card text-center py-4">
                 <i class="fa fa-smile-o fa-2x"></i>
                 <div class="card-body">
-                  <h5 class="card-title text-capitalize">Easy to use</h5>
+                  <h5 class="card-title text-capitalize mb-4">Easy to use</h5>
                   <p class="card-text">
                     You are going to use a passage lorem ipsum, you need to
                     usefull be sure.
@@ -111,7 +122,9 @@
               <div class="card text-center py-4">
                 <i class="fa fa-smile-o fa-2x"></i>
                 <div class="card-body">
-                  <h5 class="card-title text-capitalize">Awesome design</h5>
+                  <h5 class="card-title text-capitalize mb-4">
+                    Awesome design
+                  </h5>
                   <p class="card-text">
                     You are going to use a passage lorem ipsum, you need to
                     usefull be sure.
@@ -130,7 +143,9 @@
               <div class="card text-center py-4">
                 <i class="fa fa-smile-o fa-2x"></i>
                 <div class="card-body">
-                  <h5 class="card-title text-capitalize">Easy to cusomize</h5>
+                  <h5 class="card-title text-capitalize mb-4">
+                    Easy to cusomize
+                  </h5>
                   <p class="card-text">
                     You are going to use a passage lorem ipsum, you need to
                     usefull be sure.
@@ -149,7 +164,9 @@
               <div class="card text-center py-4">
                 <i class="fa fa-smile-o fa-2x"></i>
                 <div class="card-body">
-                  <h5 class="card-title text-capitalize">Anytime support</h5>
+                  <h5 class="card-title text-capitalize mb-4">
+                    Anytime support
+                  </h5>
                   <p class="card-text">
                     You are going to use a passage lorem ipsum, you need to
                     usefull be sure.
@@ -170,7 +187,7 @@
     <!-- Features section -->
     <section class="section-features">
       <div class="container text-center">
-        <h2 class="text-capitalize">app design features</h2>
+        <h2 class="text-capitalize mb-5">app design features</h2>
 
         <div class="row justify-content-center">
           <div class="col-6">

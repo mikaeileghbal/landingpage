@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .btn {
   border-radius: 25px;
   background-color: #449bfd;
@@ -38,7 +42,7 @@
   color: #449bfd;
 }
 
-.attributes .wrapper:hover .far {
+.attributes .wrapper:hover .fa {
   color: #449bfd;
 }
 
@@ -49,5 +53,60 @@
 .section-features {
   height: 100vh;
   background-color: #efefef;
+}
+
+h2::after, h2::before, h5::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 40px;
+  left: 50%;
+  bottom: -0.6em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #449bfd;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  width: 90px;
+}
+
+h2::before {
+  width: 8px;
+  height: 8px;
+  bottom: -0.7em;
+  border-radius: 50%;
+}
+
+h5 {
+  position: relative;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:active {
+  color: #449bfd;
+  position: relative;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after,
+.navbar-nav .nav-item .nav-link:active::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0.2rem;
+  height: 2px;
+  width: 98%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #449bfd;
 }
 /*# sourceMappingURL=index.css.map */

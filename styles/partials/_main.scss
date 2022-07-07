@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .btn {
   border-radius: 25px;
   background-color: $blue;
@@ -30,7 +34,7 @@
     & h5 {
       color: $blue;
     }
-    & .far {
+    & .fa {
       color: $blue;
     }
     & a {
@@ -42,4 +46,39 @@
 .section-features {
   height: 100vh;
   background-color: $gray-light;
+}
+
+%common-underline {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 40px;
+  left: 50%;
+  bottom: -0.6em;
+  transform: translateX(-50%);
+  background-color: $blue;
+}
+
+h2 {
+  position: relative;
+
+  &::after {
+    @extend %common-underline;
+    width: 90px;
+  }
+  &::before {
+    @extend %common-underline;
+    width: 8px;
+    height: 8px;
+    bottom: -0.7em;
+    border-radius: 50%;
+  }
+}
+
+h5 {
+  position: relative;
+
+  &::after {
+    @extend %common-underline;
+  }
 }

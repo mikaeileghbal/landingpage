@@ -1,0 +1,20 @@
+.navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:active {
+  color: $blue;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 0.2rem;
+    height: 2px;
+    width: 98%;
+    transform: translateX(-50%);
+    background: $blue;
+  }
+}
