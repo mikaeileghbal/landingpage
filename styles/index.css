@@ -9,15 +9,19 @@ body {
   padding-right: 1.6rem;
 }
 
+section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+section p {
+  color: #807a7a;
+}
+
 .section-hero {
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, right top, from(#449bfd), to(#835ce4));
   background-image: linear-gradient(to right, #449bfd, #835ce4);
-}
-
-.attributes {
-  padding-top: 3em;
-  padding-bottom: 3em;
 }
 
 .attributes .wrapper {
@@ -50,8 +54,11 @@ body {
   color: #449bfd;
 }
 
+.attributes .wrapper:hover p {
+  color: black;
+}
+
 .section-features {
-  height: 100vh;
   background-color: #efefef;
 }
 
@@ -82,6 +89,10 @@ h2::before {
   border-radius: 50%;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 h5 {
   position: relative;
 }
@@ -108,5 +119,43 @@ h5 {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #449bfd;
+}
+
+.card {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.card:hover h3 {
+  color: #449bfd;
+}
+
+.card:hover .features-icon .wrapper {
+  background-color: white;
+}
+
+.card:hover .wrapper .fa {
+  color: #449bfd;
+}
+
+.features-image {
+  background-image: url("../../images/phone_hand.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.features-icon .wrapper {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 1.4em;
+  background-color: #835ce4;
+}
+
+.features-icon .wrapper .fa {
+  color: white;
+  font-size: 22px;
 }
 /*# sourceMappingURL=index.css.map */

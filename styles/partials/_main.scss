@@ -9,15 +9,21 @@ body {
   padding-right: 1.6rem;
 }
 
+section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  p {
+    color: $gray-text;
+  }
+}
+
 .section-hero {
   height: 100vh;
   background-image: $gradient;
 }
 
 .attributes {
-  padding-top: 3em;
-  padding-bottom: 3em;
-
   .wrapper {
     padding: 2px;
     border-radius: 6px;
@@ -40,11 +46,13 @@ body {
     & a {
       color: $blue;
     }
+    p {
+      color: black;
+    }
   }
 }
 
 .section-features {
-  height: 100vh;
   background-color: $gray-light;
 }
 
@@ -75,6 +83,9 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 24px;
+}
 h5 {
   position: relative;
 
