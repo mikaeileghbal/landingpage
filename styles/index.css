@@ -13,14 +13,12 @@ section {
   padding-top: 5em;
   padding-bottom: 5em;
 }
-
 section p {
-  color: #807a7a;
+  color: rgb(128, 122, 122);
 }
 
 .section-hero {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(#449bfd), to(#835ce4));
   background-image: linear-gradient(to right, #449bfd, #835ce4);
 }
 
@@ -32,28 +30,21 @@ section p {
       -ms-user-select: none;
           user-select: none;
 }
-
 .attributes .wrapper i {
   color: #835ce4;
 }
-
 .attributes .wrapper:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#449bfd), to(#835ce4));
   background-image: linear-gradient(to right, #449bfd, #835ce4);
 }
-
 .attributes .wrapper:hover h5 {
   color: #449bfd;
 }
-
 .attributes .wrapper:hover .fa {
   color: #449bfd;
 }
-
 .attributes .wrapper:hover a {
   color: #449bfd;
 }
-
 .attributes .wrapper:hover p {
   color: black;
 }
@@ -62,26 +53,24 @@ section p {
   background-color: #efefef;
 }
 
-h2::after, h2::before, h5::after {
+h5::after, h2::before, h2::after {
   position: absolute;
   content: "";
   height: 2px;
   width: 40px;
   left: 50%;
   bottom: -0.6em;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background-color: #449bfd;
 }
 
 h2 {
   position: relative;
+  font-weight: 700;
 }
-
 h2::after {
   width: 90px;
 }
-
 h2::before {
   width: 8px;
   height: 8px;
@@ -90,13 +79,15 @@ h2::before {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 h5 {
   position: relative;
+  font-size: 22px;
+  font-weight: 700;
 }
-
 .navbar-nav .nav-item .nav-link {
   font-size: 14px;
   font-weight: 700;
@@ -107,7 +98,6 @@ h5 {
   color: #449bfd;
   position: relative;
 }
-
 .navbar-nav .nav-item .nav-link:hover::after,
 .navbar-nav .nav-item .nav-link:active::after {
   position: absolute;
@@ -116,8 +106,7 @@ h5 {
   bottom: 0.2rem;
   height: 2px;
   width: 98%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: #449bfd;
 }
 
@@ -127,15 +116,12 @@ h5 {
       -ms-user-select: none;
           user-select: none;
 }
-
 .card:hover h3 {
   color: #449bfd;
 }
-
 .card:hover .features-icon .wrapper {
   background-color: white;
 }
-
 .card:hover .wrapper .fa {
   color: #449bfd;
 }
@@ -143,6 +129,7 @@ h5 {
 .features-image {
   background-image: url("../../images/phone_hand.png");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -153,9 +140,7 @@ h5 {
   margin-top: 1.4em;
   background-color: #835ce4;
 }
-
 .features-icon .wrapper .fa {
   color: white;
   font-size: 22px;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
