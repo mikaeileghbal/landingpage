@@ -1,5 +1,6 @@
 body {
   position: relative;
+  font-family: "Open sans", sans-serif;
 }
 
 .btn {
@@ -21,9 +22,11 @@ section {
 .section-hero {
   height: 100vh;
   background-image: $gradient;
+  clip-path: ellipse(100% 55% at 48% 44%);
 }
 
-.attributes {
+.attributes,
+.team {
   .wrapper {
     padding: 2px;
     border-radius: 6px;
@@ -62,14 +65,16 @@ section {
   height: 2px;
   width: 40px;
   left: 50%;
-  bottom: -0.6em;
+  bottom: -16px;
   transform: translateX(-50%);
   background-color: $blue;
 }
 
-h2 {
-  position: relative;
+.title {
   font-weight: 700;
+}
+.underlined {
+  position: relative;
 
   &::after {
     @extend %common-underline;
@@ -79,7 +84,7 @@ h2 {
     @extend %common-underline;
     width: 8px;
     height: 8px;
-    bottom: -0.7em;
+    bottom: -19px;
     border-radius: 50%;
   }
 }
@@ -98,3 +103,4 @@ h5 {
     @extend %common-underline;
   }
 }
+

@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200&family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200&family=Roboto+Slab:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 body {
   position: relative;
+  font-family: "Open sans", sans-serif;
 }
 
 .btn {
@@ -20,9 +24,12 @@ section p {
 .section-hero {
   height: 100vh;
   background-image: linear-gradient(to right, #449bfd, #835ce4);
+  -webkit-clip-path: ellipse(100% 55% at 48% 44%);
+          clip-path: ellipse(100% 55% at 48% 44%);
 }
 
-.attributes .wrapper {
+.attributes .wrapper,
+.team .wrapper {
   padding: 2px;
   border-radius: 6px;
   -webkit-user-select: none;
@@ -30,22 +37,28 @@ section p {
       -ms-user-select: none;
           user-select: none;
 }
-.attributes .wrapper i {
+.attributes .wrapper i,
+.team .wrapper i {
   color: #835ce4;
 }
-.attributes .wrapper:hover {
+.attributes .wrapper:hover,
+.team .wrapper:hover {
   background-image: linear-gradient(to right, #449bfd, #835ce4);
 }
-.attributes .wrapper:hover h5 {
+.attributes .wrapper:hover h5,
+.team .wrapper:hover h5 {
   color: #449bfd;
 }
-.attributes .wrapper:hover .fa {
+.attributes .wrapper:hover .fa,
+.team .wrapper:hover .fa {
   color: #449bfd;
 }
-.attributes .wrapper:hover a {
+.attributes .wrapper:hover a,
+.team .wrapper:hover a {
   color: #449bfd;
 }
-.attributes .wrapper:hover p {
+.attributes .wrapper:hover p,
+.team .wrapper:hover p {
   color: black;
 }
 
@@ -53,28 +66,31 @@ section p {
   background-color: #efefef;
 }
 
-h5::after, h2::before, h2::after {
+h5::after, .underlined::before, .underlined::after {
   position: absolute;
   content: "";
   height: 2px;
   width: 40px;
   left: 50%;
-  bottom: -0.6em;
+  bottom: -16px;
   transform: translateX(-50%);
   background-color: #449bfd;
 }
 
-h2 {
-  position: relative;
+.title {
   font-weight: 700;
 }
-h2::after {
+
+.underlined {
+  position: relative;
+}
+.underlined::after {
   width: 90px;
 }
-h2::before {
+.underlined::before {
   width: 8px;
   height: 8px;
-  bottom: -0.7em;
+  bottom: -19px;
   border-radius: 50%;
 }
 
@@ -110,19 +126,22 @@ h5 {
   background: #449bfd;
 }
 
-.card {
+.section-features {
+  padding-bottom: 0;
+}
+.section-features .card {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-.card:hover h3 {
+.section-features .card:hover h3 {
   color: #449bfd;
 }
-.card:hover .features-icon .wrapper {
+.section-features .card:hover .features-icon .wrapper {
   background-color: white;
 }
-.card:hover .wrapper .fa {
+.section-features .card:hover .wrapper .fa {
   color: #449bfd;
 }
 
@@ -143,4 +162,46 @@ h5 {
 .features-icon .wrapper .fa {
   color: white;
   font-size: 22px;
+}
+
+.team {
+  margin-top: 6em;
+}
+
+.overlay, .card-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform: translate(50%, -50%);
+}
+
+.card-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
+}
+
+.team h5 {
+  margin-top: 1.5em;
+}
+
+.overlay {
+  z-index: 2;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: rgba(131, 92, 228, 0.8);
+}
+.overlay .fa {
+  color: white;
+  font-size: 22px;
+}
+
+.team .wrapper .card:hover .overlay {
+  display: flex;
+}
+.team .wrapper .card:hover .fa {
+  color: white;
 }/*# sourceMappingURL=index.css.map */

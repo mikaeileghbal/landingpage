@@ -1,14 +1,19 @@
-.card {
-  user-select: none;
+.section-features {
+  padding-bottom: 0;
 
-  &:hover h3 {
-    color: $blue;
-  }
-  &:hover .features-icon .wrapper {
-    background-color: white;
-  }
-  &:hover .wrapper .fa {
-    color: $blue;
+  .card {
+  
+    user-select: none;
+
+    &:hover h3 {
+      color: $blue;
+    }
+    &:hover .features-icon .wrapper {
+      background-color: white;
+    }
+    &:hover .wrapper .fa {
+      color: $blue;
+    }
   }
 }
 

@@ -1,0 +1,46 @@
+.team {
+  margin-top: 6em;
+}
+
+%position {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transform: translate(50%, -50%);
+}
+
+.card-image {
+  @extend %position;
+  object-fit: cover;
+  margin: 0;
+}
+
+.team h5 {
+  margin-top: 1.5em;
+}
+
+.overlay {
+  @extend %position;
+  z-index: 2;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: rgba(131, 92, 228, 0.8);
+
+  .fa {
+    color: white;
+    font-size: 22px;
+  }
+}
+
+.team .wrapper .card:hover {
+  .overlay {
+    display: flex;
+  }
+
+  .fa {
+    color: white;
+  }
+}
