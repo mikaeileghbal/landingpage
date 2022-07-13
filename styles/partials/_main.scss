@@ -21,8 +21,11 @@ section {
 
 .section-hero {
   height: 100vh;
-  background-image: $gradient;
   clip-path: ellipse(100% 55% at 48% 44%);
+}
+
+.gradient {
+  background-image: $gradient;
 }
 
 .attributes,
@@ -103,4 +106,3 @@ h5 {
     @extend %common-underline;
   }
 }
-

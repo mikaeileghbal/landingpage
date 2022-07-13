@@ -23,9 +23,12 @@ section p {
 
 .section-hero {
   height: 100vh;
-  background-image: linear-gradient(to right, #449bfd, #835ce4);
   -webkit-clip-path: ellipse(100% 55% at 48% 44%);
           clip-path: ellipse(100% 55% at 48% 44%);
+}
+
+.gradient {
+  background-image: linear-gradient(to right, #449bfd, #835ce4);
 }
 
 .attributes .wrapper,
@@ -167,13 +170,17 @@ h5 {
 .team {
   margin-top: 6em;
 }
+.team .card {
+  position: relative;
+}
 
 .overlay, .card-image {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   position: absolute;
-  transform: translate(50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card-image {
