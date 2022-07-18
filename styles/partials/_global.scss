@@ -4,7 +4,7 @@
 
 $gradient-start: #449bfd;
 $gradient-end: #835ce4;
-$gradient: linear-gradient(to right, $gradient-start, $gradient-end);
+$gradient: linear-gradient(to right, $gradient-start 0%, $gradient-end 70%);
 $blue: $gradient-start;
 $gray-light: #efefef;
 $gray-text: rgb(128, 122, 122);

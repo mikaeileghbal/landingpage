@@ -28,7 +28,7 @@ section p {
 }
 
 .gradient {
-  background-image: linear-gradient(to right, #449bfd, #835ce4);
+  background-image: linear-gradient(to right, #449bfd 0%, #835ce4 70%);
 }
 
 .attributes .wrapper,
@@ -46,7 +46,7 @@ section p {
 }
 .attributes .wrapper:hover,
 .team .wrapper:hover {
-  background-image: linear-gradient(to right, #449bfd, #835ce4);
+  background-image: linear-gradient(to right, #449bfd 0%, #835ce4 70%);
 }
 .attributes .wrapper:hover h5,
 .team .wrapper:hover h5 {
@@ -129,6 +129,25 @@ h5 {
   background: #449bfd;
 }
 
+.btn-app-store,
+.btn-google-play {
+  width: 160px;
+  height: 50px;
+  background-size: cover;
+  padding: 0;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-app-store {
+  background-image: url("../../images/app-store-logo.png");
+}
+
+.btn-google-play {
+  background-image: url("../../images/google-play.png");
+}
+
 .section-features {
   padding-bottom: 0;
 }
@@ -152,7 +171,7 @@ h5 {
   background-image: url("../../images/phone_hand.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .features-icon .wrapper {
@@ -211,4 +230,20 @@ h5 {
 }
 .team .wrapper .card:hover .fa {
   color: white;
+}
+
+.download.underlined::after,
+.download.underlined::before {
+  background-color: white;
+  left: 0;
+  transform: translateX(0);
+}
+
+.download.underlined::before {
+  left: 45px;
+  transform: translateX(-50%);
+}
+
+.section-download .features-icon .wrapper {
+  background-color: transparent;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,18 @@
+.download.underlined::after,
+.download.underlined::before {
+  background-color: white;
+  left: 0;
+  transform: translateX(0);
+}
+.download.underlined::before {
+  left: 45px;
+  transform: translateX(-50%);
+}
+
+.section-download {
+  .features-icon {
+    .wrapper {
+      background-color: transparent;
+    }
+  }
+}

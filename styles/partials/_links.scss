@@ -18,3 +18,21 @@
     background: $blue;
   }
 }
+
+.btn-app-store,
+.btn-google-play {
+  width: 160px;
+  height: 50px;
+  background-size: cover;
+  padding: 0;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-app-store {
+  background-image: url("../../images/app-store-logo.png");
+}
+
+.btn-google-play {
+  background-image: url("../../images/google-play.png");
+}
